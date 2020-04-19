@@ -1,0 +1,14 @@
+.folderList{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.Folder{
+    list-style-type: none;
+    padding: 2px;
+    font-size: 1.8em;
+    border: 1px black solid;
+    padding: 5px;
+}

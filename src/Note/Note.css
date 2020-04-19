@@ -1,0 +1,15 @@
+.Note{
+    border: 1px black solid;
+    padding: 5%;
+}
+
+.NoteListMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20%;
+}
+
+.listItem{
+    margin: 5%;
+}
