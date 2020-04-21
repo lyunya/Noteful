@@ -15,8 +15,8 @@ export default class MainPage extends Component{
           <Nav /> 
         </header>
           <div className="content">
-            <FolderList folders={this.props.folders} />
-            <NotesList Notes={this.props.notes} />
+            <FolderList folders={this.context.folders} />
+            <NotesList Notes={this.context.notes} />
           </div>
           </>
         );
