@@ -1,7 +1,13 @@
 .NoteListMain{
       list-style-type: none;
+      background-color: rgb(168, 218, 220);
 }
 
 .listItem{
     list-style-type: none;
+    background-color:rgb(112, 193, 179);
+    width: 280px;
+    padding-right: 80px;
+    margin-right: 350px;
+    border-radius: 5px;
 }

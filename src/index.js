@@ -8,7 +8,7 @@ import dummyStore from './dummy-store'
 
 ReactDOM.render(
   <BrowserRouter>
-    <App store={dummyStore} />
+    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );

@@ -1,0 +1,23 @@
+.Folder{
+    color: rgb(251, 253, 255);
+    list-style-type: none;
+    font-size: 1.8em;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+.Folder:hover{
+    color: coral;
+}
+.folder:hover{
+    color: teal;
+}
+

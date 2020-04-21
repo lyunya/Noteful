@@ -4,6 +4,6 @@ import "./Nav.css";
 
 export default function Nav(props) {
     return <nav className="Nav">
-        <Link to={'/'}>Noteful</Link>
+        <Link to={'/'} className="navTitle">Noteful</Link>
     </nav>
 }

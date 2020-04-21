@@ -1,0 +1,18 @@
+.content{
+    background-color: rgb(168, 218, 220);
+    text-align: center;
+}
+a:hover{
+    color: coral;
+}
+.folderList{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: rgb(69, 123, 157);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}

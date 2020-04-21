@@ -1,0 +1,44 @@
+.sideBar{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: rgb(69, 123, 157);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+}
+
+.Note{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.goBackButton{
+    box-shadow: 0px 0px 0px 2px #ffffff;
+	background:linear-gradient(to bottom, #02c399 5%, #237a67 100%);
+	background-color:#02c399;
+	border-radius:10px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding: 6px 10px;
+    text-decoration:none;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 8%;
+} 
+
+.goBackButton:hover{
+    background:linear-gradient(to bottom, #217260 5%, #02c399 100%);
+	background-color:#237a67;
+}
+
+.goBackButton:active{
+    position:relative;
+	top: 1px;
+}
+
