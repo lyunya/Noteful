@@ -9,7 +9,7 @@ class FolderList extends Component{
             <section className="folderList">
               <ul className="orderedList">
                 {this.props.folders.map((folder) => (
-                  <Folder id={folder.id} name={folder.name} />
+                  <Folder key={folder.id} id={folder.id} name={folder.name} />
                 ))}
               </ul>
               <button className="addFolder">Add Folder</button>

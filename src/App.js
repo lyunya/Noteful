@@ -32,54 +32,26 @@ class App extends Component {
       });
   }
 
-  getFolderNotes = (folderId) => {
-    return this.state.notes.filter((item) => item.folderId === folderId);
-  };
-
-  getFolder = (noteId) => {
-    const note = this.state.notes.find((item) => item.id === noteId);
-    return this.state.folders.find((item) => item.id === note.folderId);
-  };
-
-  getNote = (noteId) => {
-    return this.state.notes.find((item) => item.id === noteId);
+  handleDeleteNote = (noteId) => {
+    this.setState({
+      notes: this.state.notes.filter((note) => note.id !== noteId),
+    });
+    
   };
 
   render() {
     const contextValue = {
       notes: this.state.notes,
       folders: this.state.folders,
-      deleteNote: this.deleteNote,
+      deleteNote: this.handleDeleteNote,
     };
     return (
       <NotefulContext.Provider value={contextValue}>
         <div className="App">
           <BrowserRouter>
-            <Route
-              exact
-              path="/"
-              component={MainPage}
-            />
-            <Route
-              exact
-              path="/folder/:folderId"
-              render={({ match }) => (
-                <FolderPage
-                  folders={this.state.folders}
-                  notes={this.getFolderNotes(match.params.folderId)}
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/note/:noteId"
-              render={({ match }) => (
-                <NotePage
-                  folder={this.getFolder(match.params.noteId)}
-                  note={this.getNote(match.params.noteId)}
-                />
-              )}
-            />
+            <Route exact path="/" component={MainPage} />
+            <Route exact path="/folder/:folderId" component={FolderPage} />
+            <Route exact path="/note/:noteId" component={NotePage} />
           </BrowserRouter>
         </div>
       </NotefulContext.Provider>

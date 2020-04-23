@@ -5,16 +5,16 @@ import './NotesList.css'
 
 class NotesList extends Component {
   render() {
-    return (        
+    return (
       <section className="NoteListMain">
+        <button className="AddNoteButton">Add note</button>
         <ul>
           {this.props.Notes.map((note) => (
-            <li className='listItem' key={note.id}>
+            <li className="listItem" key={note.id}>
               <Note id={note.id} name={note.name} modified={note.modified} />
             </li>
           ))}
         </ul>
-        <button>Add note</button>
       </section>
     );
   }
